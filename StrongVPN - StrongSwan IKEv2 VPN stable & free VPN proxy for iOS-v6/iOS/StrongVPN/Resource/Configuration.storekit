@@ -1,0 +1,71 @@
+{
+  "identifier" : "C6F31FD4",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "056AE6E6",
+      "localizations" : [
+
+      ],
+      "name" : "VPN",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "1.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "97479EA9",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Gold Status Monthly",
+              "displayName" : "Gold Status Monthly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "app.witwork.strongvpn.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : null,
+          "subscriptionGroupID" : "056AE6E6",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "9.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "1BD9A17F",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Gold Status Yearly",
+              "displayName" : "Gold Status Yearly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "app.witwork.strongvpn.yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : null,
+          "subscriptionGroupID" : "056AE6E6",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 1
+  }
+}

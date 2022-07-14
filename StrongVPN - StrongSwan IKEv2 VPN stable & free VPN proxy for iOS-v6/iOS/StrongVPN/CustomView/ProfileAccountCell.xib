@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="campton_bold.otf">
+            <string>Campton-Bold</string>
+        </array>
+        <array key="campton_book.otf">
+            <string>Campton-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProfileAccountCell" id="k3Z-rA-kg5" customClass="ProfileAccountCell" customModule="StrongVPN" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="421" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kz2-ER-OS8">
+                <rect key="frame" x="0.0" y="0.0" width="421" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bKY-Pk-su8">
+                        <rect key="frame" x="0.0" y="0.0" width="421" height="49"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkC-Tl-DK2">
+                                <rect key="frame" x="15" y="18" width="58.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Campton-Bold" family="Campton" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Free" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzN-MI-YkE">
+                                <rect key="frame" x="377" y="18" width="29" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Campton-Book" family="Campton" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="49" id="Nad-1g-wbV"/>
+                            <constraint firstAttribute="trailing" secondItem="lzN-MI-YkE" secondAttribute="trailing" constant="15" id="Y4H-N2-hAj"/>
+                            <constraint firstItem="lzN-MI-YkE" firstAttribute="centerY" secondItem="LkC-Tl-DK2" secondAttribute="centerY" id="hPV-Ii-kQ9"/>
+                            <constraint firstItem="LkC-Tl-DK2" firstAttribute="centerY" secondItem="bKY-Pk-su8" secondAttribute="centerY" constant="3" id="haL-R4-zDc"/>
+                            <constraint firstItem="LkC-Tl-DK2" firstAttribute="leading" secondItem="bKY-Pk-su8" secondAttribute="leading" constant="15" id="rL3-fw-xR8"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwi-6U-SoL" customClass="WitWorkButton" customModule="StrongVPN" customModuleProvider="target">
+                        <rect key="frame" x="15" y="66" width="391" height="50.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Rwi-6U-SoL" secondAttribute="height" multiplier="311:40" id="75I-Nf-F47"/>
+                        </constraints>
+                        <state key="normal" title="GET PREMIUM NOW"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="letterSpace">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="tapGetPremium" destination="k3Z-rA-kg5" eventType="touchUpInside" id="Fma-rq-G8b"/>
+                        </connections>
+                    </button>
+                    <view alpha="0.10000000149011612" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TzY-b2-po7">
+                        <rect key="frame" x="15" y="49" width="391" height="1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="lMd-Jv-4J5"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcR-nY-HCe" customClass="WitWorkButton" customModule="StrongVPN" customModuleProvider="target">
+                        <rect key="frame" x="15" y="132.5" width="391" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="KcR-nY-HCe" secondAttribute="height" multiplier="311:40" id="Zxr-B1-YtA"/>
+                        </constraints>
+                        <state key="normal" title="RESTORE PURCHASE"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="letterSpace">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="tapRestore" destination="k3Z-rA-kg5" eventType="touchUpInside" id="5E7-H9-VMn"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.023529411764705882" green="0.12156862745098039" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="bKY-Pk-su8" firstAttribute="leading" secondItem="kz2-ER-OS8" secondAttribute="leading" id="Dcd-9R-UsL"/>
+                    <constraint firstItem="Rwi-6U-SoL" firstAttribute="leading" secondItem="LkC-Tl-DK2" secondAttribute="leading" id="Dfj-CE-rDC"/>
+                    <constraint firstItem="KcR-nY-HCe" firstAttribute="width" secondItem="Rwi-6U-SoL" secondAttribute="width" id="HBp-hu-IC0"/>
+                    <constraint firstItem="TzY-b2-po7" firstAttribute="trailing" secondItem="lzN-MI-YkE" secondAttribute="trailing" id="R2a-mN-0fF"/>
+                    <constraint firstItem="KcR-nY-HCe" firstAttribute="height" secondItem="Rwi-6U-SoL" secondAttribute="height" id="UpB-Jr-JkB"/>
+                    <constraint firstItem="Rwi-6U-SoL" firstAttribute="top" secondItem="TzY-b2-po7" secondAttribute="bottom" constant="16" id="cS7-u8-0GJ"/>
+                    <constraint firstItem="Rwi-6U-SoL" firstAttribute="trailing" secondItem="lzN-MI-YkE" secondAttribute="trailing" id="ej8-Co-mcE"/>
+                    <constraint firstItem="KcR-nY-HCe" firstAttribute="centerX" secondItem="Rwi-6U-SoL" secondAttribute="centerX" id="iJs-8R-eDA"/>
+                    <constraint firstItem="KcR-nY-HCe" firstAttribute="top" secondItem="Rwi-6U-SoL" secondAttribute="bottom" constant="16" id="lOx-Y0-BEJ"/>
+                    <constraint firstItem="bKY-Pk-su8" firstAttribute="top" secondItem="kz2-ER-OS8" secondAttribute="top" id="lba-h4-UGd"/>
+                    <constraint firstItem="TzY-b2-po7" firstAttribute="leading" secondItem="LkC-Tl-DK2" secondAttribute="leading" id="lqo-iy-q73"/>
+                    <constraint firstItem="TzY-b2-po7" firstAttribute="top" secondItem="bKY-Pk-su8" secondAttribute="bottom" id="unZ-4l-J1a"/>
+                    <constraint firstAttribute="trailing" secondItem="bKY-Pk-su8" secondAttribute="trailing" id="xQc-7g-Y57"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="421" height="201"/>
+            <connections>
+                <outlet property="btnConnect" destination="Rwi-6U-SoL" id="zCm-I6-a3V"/>
+                <outlet property="btnRestore" destination="KcR-nY-HCe" id="eJe-yW-WK6"/>
+                <outlet property="lbSubscriptionType" destination="lzN-MI-YkE" id="pid-2m-0Ht"/>
+                <outlet property="line" destination="TzY-b2-po7" id="Wpn-ZU-arv"/>
+            </connections>
+            <point key="canvasLocation" x="181.8840579710145" y="-13.058035714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

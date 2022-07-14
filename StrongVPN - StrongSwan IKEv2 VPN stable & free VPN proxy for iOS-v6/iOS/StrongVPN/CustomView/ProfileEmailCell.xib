@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="campton_bold.otf">
+            <string>Campton-Bold</string>
+        </array>
+        <array key="campton_book.otf">
+            <string>Campton-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProfileEmailCell" id="MY8-UM-Wf0" customClass="ProfileEmailCell" customModule="StrongVPN" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="513" height="447"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Vac-WZ-7VX">
+                <rect key="frame" x="0.0" y="0.0" width="513" height="447"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBe-Ov-o5h">
+                        <rect key="frame" x="0.0" y="319" width="375" height="128"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuE-Df-a9H">
+                                <rect key="frame" x="0.0" y="88" width="375" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91h-dp-2v3">
+                                        <rect key="frame" x="15" y="10.333333333333313" width="38" height="19.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="38" id="8YR-im-10O"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Campton-Bold" family="Campton" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="witwork.digital@gmail.com" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjf-fP-6Bq">
+                                        <rect key="frame" x="180" y="10" width="180" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="LVI-VY-Wbc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Campton-Book" family="Campton" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="91h-dp-2v3" firstAttribute="leading" secondItem="cuE-Df-a9H" secondAttribute="leading" constant="15" id="AK0-ik-Hr0"/>
+                                    <constraint firstItem="rjf-fP-6Bq" firstAttribute="centerY" secondItem="cuE-Df-a9H" secondAttribute="centerY" id="faN-Lb-mgT"/>
+                                    <constraint firstAttribute="height" constant="40" id="val-bK-CPx"/>
+                                    <constraint firstAttribute="trailing" secondItem="rjf-fP-6Bq" secondAttribute="trailing" constant="15" id="y1l-BG-J22"/>
+                                    <constraint firstItem="91h-dp-2v3" firstAttribute="centerY" secondItem="cuE-Df-a9H" secondAttribute="centerY" id="zxY-xt-bW0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.023529411764705882" green="0.12156862745098039" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cuE-Df-a9H" firstAttribute="leading" secondItem="xBe-Ov-o5h" secondAttribute="leading" id="EWn-3P-3vd"/>
+                            <constraint firstAttribute="trailing" secondItem="cuE-Df-a9H" secondAttribute="trailing" id="ZcN-5V-cjg"/>
+                            <constraint firstAttribute="bottom" secondItem="cuE-Df-a9H" secondAttribute="bottom" id="gDw-4q-jAo"/>
+                            <constraint firstAttribute="height" constant="128" id="iaz-gs-gqZ"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_profile" translatesAutoresizingMaskIntoConstraints="NO" id="zyJ-Tt-Itd">
+                        <rect key="frame" x="82" y="16" width="211" height="305"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="zyJ-Tt-Itd" secondAttribute="height" multiplier="211:305" id="LFZ-wR-MNt"/>
+                            <constraint firstAttribute="width" constant="193" id="e6T-Zk-KpM"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zyJ-Tt-Itd" firstAttribute="centerX" secondItem="Vac-WZ-7VX" secondAttribute="centerX" id="9mJ-Ib-jSV"/>
+                    <constraint firstAttribute="bottom" secondItem="xBe-Ov-o5h" secondAttribute="bottom" id="E8A-k0-Sey"/>
+                    <constraint firstItem="zyJ-Tt-Itd" firstAttribute="width" secondItem="Vac-WZ-7VX" secondAttribute="width" multiplier="0.562667" id="pUk-uO-q7f"/>
+                    <constraint firstItem="zyJ-Tt-Itd" firstAttribute="top" secondItem="Vac-WZ-7VX" secondAttribute="top" constant="16" id="q4Z-vW-J25"/>
+                    <constraint firstAttribute="trailing" secondItem="xBe-Ov-o5h" secondAttribute="trailing" id="sqP-as-Fkq"/>
+                    <constraint firstItem="xBe-Ov-o5h" firstAttribute="leading" secondItem="Vac-WZ-7VX" secondAttribute="leading" id="vVv-a6-FvT"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Wak-GR-flR"/>
+            <size key="customSize" width="446" height="495"/>
+            <connections>
+                <outlet property="content" destination="xBe-Ov-o5h" id="RTf-hd-L3j"/>
+                <outlet property="lbEmail" destination="rjf-fP-6Bq" id="Rip-XE-WPu"/>
+            </connections>
+            <point key="canvasLocation" x="25.384615384615383" y="111.96682464454976"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_profile" width="211" height="305"/>
+    </resources>
+</document>
